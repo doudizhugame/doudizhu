@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style type='text/css'>
+			/*下面的星号让素有元素内外边距都为0，不留空隙*/
+			*{
+				padding:0;
+				margin:0;
+			/*我们让整个屏幕都有一种淡淡的背景色*/
+			}
+			body,html{
+				background-color:lightcyan;
+				width: 100%;
+				height: 600px;
+			}
+			/*下面这个box是承载全部网页内容的容器样式，是下面所有div元素的父级元素的样式，注意一定要先将字号设为0，否则主体和页脚之间会有一条白色缝隙*/
+			#box
+			{
+				margin:0 auto;
+				font-size:0;
+			}
+			#logo{
+				height:15%;
+				width:100%;
+				background-color:orange;
+				text-align:center;
+			}
+			#nav{
+				display:inline-block;
+				width:10%;
+				height:600px;
+				background-color:lightseagreen;
+				float:left;
+				
+			}
+			#main{
+				display:inline-block;
+				width:90%;
+				height:600px;
+				background-color:lightgoldenrodyellow;
+				
+			}
+			#footer
+			{
+				height:50px;
+				background-color:darkgrey;
+				
+			}
+	</style>
+</head>
+<body>
+	<div id='box'>
+			<div id='logo'>
+				<span style="font-size:60px;">logo区域</span>
+			</div>
+			<div id='nav'>
+				<ul type='none' style="font-size:60px;">
+					<li>导</li>
+					<li>航</li>
+					<li>区</li>
+					<li>域</li>
+				</ul>
+			</div>
+			<div id='main'>
+				<p style='font-size:60px;'>主体区域</p>
+			</div>
+			<div id='footer'>
+				<span style='font-size:20px;'>页脚区域</span>
+			</div>
+		</div>
+
+
+
+</body>
+</html>
