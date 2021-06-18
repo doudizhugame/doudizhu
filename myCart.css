@@ -1,0 +1,138 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.w {
+	width:1000px;
+	margin: 0 auto;
+}
+.w1{
+	width:800px;
+	margin: 0 auto;
+}
+li {            /*导航栏*/
+	list-style: none;
+}
+
+
+body{
+    background-color: #fffceb;
+    height: 1200px;
+}
+.header{
+    height: 60px;
+    margin: 30px auto;
+	background-color: #fabf66;
+}
+.logo{
+    /* margin-left:0px; */
+	float:left;
+	margin-left:120px;
+    width: 100px;
+    height: 42px;}
+.nav{
+    float: left;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.nav ul li{
+    float: left;
+    margin: 0 15px;
+}
+.nav ul li a{
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: black;
+}
+.nav ul li a:hover{
+    border-bottom: 2px solid lightslategray;
+    color:lightslategray ;
+}
+.user{
+    float:right;
+    line-height: 42px;
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.content{
+	width:800px;
+	margin:10px auto 5px auto;
+	clear:both;
+	}
+	.title_1{
+		text-align:center;
+		width:50px;
+		}
+	.title_2{
+		text-align:center;
+		}
+	.title_4{
+		text-align:center;
+		width:80px;
+		}
+	.title_5{
+		text-align:center;
+		width:100px;
+		}
+	.title_6{
+		text-align:center;
+		width:80px;
+		}
+	.title_7{
+		text-align:center;
+		width:60px;
+		}
+	.line{
+		background-color:#fcdbaa;
+		height:3px;
+		}
+	.shopInfo{
+		padding-left:10px;
+		height:35px;
+		vertical-align:bottom;
+		}
+	.num_input{
+		border:solid 1px #666;
+		width:25px;
+		height:15px;
+		text-align:center;
+		}
+	.cart_td_1,.cart_td_2,.cart_td_3,.cart_td_5,.cart_td_6,.cart_td_7,.cart_td_8{
+		background-color:#facf8f;
+		border-bottom:solid 1px #fcdbaa;
+		border-top:solid 1px #fcdbaa;
+		text-align:center;
+		padding:5px;
+		}
+	.cart_td_1,.cart_td_3,.cart_td_5,.cart_td_6,.cart_td_7{
+		border-right:solid 1px #FFF;
+		}
+	.cart_td_3{
+		text-align:left;
+		}
+	.cart_td_7{
+		font-weight:bold;
+		color:#fe6400;
+		font-size:14px;
+		}
+	.hand{
+		cursor:pointer;
+		}
+.shopend{
+	text-align:right;
+	padding-right:10px;
+	padding-bottom:10px;
+	}
+.yellow{
+	font-weight:bold;
+	color:#fe6400;
+	font-size:18px;
+	line-height:40px;
+	}
