@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>购物车页面</title>
-    <link href="css/myCart.css" type="text/css" rel="stylesheet" />
+    <link href="myCart.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="购物车.js"></script>
+
 </head>
 
 <body>
@@ -31,7 +33,7 @@
  <table width="100%" border="0" cellspacing="0" cellpadding="0" id="shopping">
  <form action="" method="post" name="myform">
   <tr>
-    <td class="title_1"><input id="allCheckBox" type="checkbox" value=""/>全选</td>
+    <td class="title_1"><input id="allCheckBox" type="checkbox" value=""  onclick="selectAll()"/>全选</td>
     <td class="title_2" colspan="2">店铺宝贝</td>
     <td class="title_4">单价（元）</td>
     <td class="title_5">数量</td>
@@ -47,58 +49,58 @@
     <td colspan="8" class="shopInfo"></td>
   </tr>
   <tr id="product1">
-    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product1" /></td>
+    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()"/></td>
     <td class="cart_td_2"><img src="图片/咖啡.jpg" alt="shopping" width="60" height="60"/></td>
     <td class="cart_td_3"><a href="#"><font color="black">拿铁咖啡</font></a><br /></td>
-    <td class="cart_td_5">138.00</td>
-    <td class="cart_td_6"><img src="images/taobao_minus.jpg"/> <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="images/taobao_adding.jpg"/></td>
+    <td class="cart_td_5">8.00</td>
+    <td class="cart_td_6"><img src="images/minus.jpg" alt="minus" onclick="changeNum('num_1','minus')" class="hand"/> <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="images/adding.jpg" alt="add" onclick="changeNum('num_1','add')"  class="hand"/></td>
     <td class="cart_td_7"></td>
-    <td class="cart_td_8">删除</td>
+    <td class="cart_td_8"><a href="javascript:deleteRow('product1');">删除</td>
   </tr>
   
   <tr>
     <td colspan="8" class="shopInfo"></td>
   </tr>
   <tr id="product2">
-    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product2" /></td>
+    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product2" onclick="selectSingle()" /></td>
     <td class="cart_td_2"><img src="图片/包子.jpg" alt="shopping" width="60" height="60"/></td>
     <td class="cart_td_3"><a href="#"><font color="black">鲜肉包子</font></a><br /></td>
-    <td class="cart_td_5">265.00</td>
-    <td class="cart_td_6"><img src="images/taobao_minus.jpg"/> <input id="num_2" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="images/taobao_adding.jpg"/></td>
+    <td class="cart_td_5">2.00</td>
+    <td class="cart_td_6"><img src="images/minus.jpg" alt="minus" onclick="changeNum('num_2','minus')" class="hand"/> <input id="num_2" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="adding.jpg" lt="add" onclick="changeNum('num_2','add')"  class="hand"/></td>
     <td class="cart_td_7"></td>
-    <td class="cart_td_8">删除</td>
+    <td class="cart_td_8"><a href="javascript:deleteRow('product2');">删除</td>
   </tr>
   
   <tr>
     <td colspan="8" class="shopInfo"> </td>
   </tr>
   <tr id="product3">
-    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product3"/></td>
+    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product3" onclick="selectSingle()"/></td>
     <td class="cart_td_2"><img src="图片/油条.jpg" alt="shopping" width="60" height="60"/></td>
     <td class="cart_td_3"><a href="#"><font color="black">油条</font></a><br /></td>
-    <td class="cart_td_5">85.00</td>
-    <td class="cart_td_6"><img src="images/taobao_minus.jpg" /> <input id="num_3" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="images/taobao_adding.jpg"/></td>
+    <td class="cart_td_5">1.00</td>
+    <td class="cart_td_6"><img src="images/minus.jpg" alt="minus" onclick="changeNum('num_3','minus')" class="hand"/> <input id="num_3" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="images/adding.jpg" alt="add" onclick="changeNum('num_3','add')"  class="hand"/></td>
     <td class="cart_td_7"></td>
-    <td class="cart_td_8">删除</td>
+    <td class="cart_td_8"><a href="javascript:deleteRow('product3');">删除</td>
   </tr>
   
   <tr>
     <td colspan="8" class="shopInfo"> </td>
   </tr>
    <tr id="product4">
-    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product4"/></td>
+    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product4" onclick="selectSingle()"/></td>
     <td class="cart_td_2"><img src="图片/粥.jpg" alt="shopping" width="60" height="60"/></td>
     <td class="cart_td_3"><a href="#"><font color="black">皮蛋瘦肉粥</font></a><br /></td>
-    <td class="cart_td_5">12.00</td>
-    <td class="cart_td_6"><img src="images/taobao_minus.jpg"/> <input id="num_4" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="images/taobao_adding.jpg"/></td>
+    <td class="cart_td_5">10.00</td>
+    <td class="cart_td_6"><img src="images/minus.jpg" alt="minus" onclick="changeNum('num_4','minus')" class="hand"/> <input id="num_4" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="images/adding.jpg"/></td>
     <td class="cart_td_7"></td>
-    <td class="cart_td_8">删除</td>
+    <td class="cart_td_8"><a href="javascript:deleteRow('product4');">删除</td>
   </tr>
   
   <tr>
-   <td  colspan="3"><img src="images/taobao_del.jpg"/></td>
-   <td colspan="5" class="shopend">商品总价（不含运费）：<label id="total" class="yellow"></label> 元<br />
-   <input name=" " type="image" src="images/taobao_subtn.jpg" /></td>
+   <td  colspan="3"><a href="javascript:deleteSelectRow()"><img src="images/del.jpg" alt="delete"/></td>
+   <td colspan="5" class="shopend">商品总价：<label id="total" class="yellow"></label> 元<br />
+   <input name=" " type="image" src="images/subtn.jpg" /></td>
   </tr>
   </form>
 </table>
