@@ -1,9 +1,8 @@
-
 function changeNum(numId,flag){
 	var numId=document.getElementById(numId);
 	if(flag=="minus"){
 		if(numId.value<=0){
-			alert("宝贝数量必须大于0");
+			alert("不能为空");
 			return false;
 			}
 		else{
@@ -90,3 +89,6 @@ function deleteSelectRow(){
 	productCount();
 	}
 
+function a(){
+	alert("支付成功");
+}

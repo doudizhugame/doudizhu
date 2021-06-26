@@ -1,0 +1,270 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.w{
+	width:1200px;
+	margin: 0 auto;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+    color: black;
+}
+img{
+    vertical-align: middle;
+    font-size: 0;
+    margin-left: -6px;
+    margin-top: -1.5px;
+}
+body{
+    background-color: #fffceb;
+    /*background: url(图片/背景.jpg)no-repeat;*/
+    height: 1200px;
+    /*width: 100%;*/
+}
+.header{
+    height: 60px;
+    margin: 30px auto;
+	background-color: #fabf66;
+}
+.logo{
+    /* margin-left:0px; */
+	float:left;
+	margin-left:120px;
+    width: 100px;
+    height: 42px;}
+.nav{
+    float: left;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.nav ul li{
+    float: left;
+    margin: 0 15px;
+}
+.nav ul li a{
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: black;
+}
+.nav ul li a:hover{
+    border-bottom: 2px solid lightslategray;
+    color:lightslategray ;
+}
+.user{
+    float:right;
+    line-height: 42px;
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.list {
+        width: 200px;
+        height: 4000px;
+        background-color: #fffceb;
+        float: left;
+    }
+
+.list .list1 {
+        width: 98%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        background-color: #f8f7f7;
+        position: sticky;
+        top: 20px;
+        box-shadow: 10px 10px 10px #948a8a;
+        border-radius: 10px;
+    }
+
+.list div.item:hover {
+        background-color: rgba(44, 39, 39, 0.267);
+    }
+
+.list a {
+        color: rgb(0, 0, 0);
+        padding-left: 18px;
+    }
+
+.list a:hover {
+        color: red;
+    }
+
+.shop1 {
+        width: 550px;
+        height: 660px;
+        background-color: #fffceb;
+        float: left;
+        /* text-align: center; */
+    }
+
+.shop1 .shop11 {
+        width: 95%;
+        height: 95%;
+        margin-top: 25px;
+        margin-left: 20px;
+        border-radius: 20px;
+        background-color: #fffceb;
+        overflow: hidden;
+    }
+
+.shop1 .shop11:hover {
+        background-color: lavenderblush;
+        border: black 1px solid;
+    }
+
+.shop1 .product1 {
+        width: 95%;
+        height: 60%;
+        overflow: hidden;
+        margin: 15px;
+        border-radius: 10px;
+    }
+
+
+    .product1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product1 :hover {
+        width: 105%;
+        height: 105%;
+    }
+
+    .introduce1 {
+        width: 95%;
+        height: 35%;
+        margin: 15px;
+        background-color: rgb(209, 209, 209);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .introduce1 .word1 {
+        height: 222px;
+        background-color: rgb(202, 202, 200);
+        padding: 15px;
+    }
+
+    .shop21 {
+        width: 1007px;
+        height: 350px;
+        background-color: #fffceb;
+        float: left;
+        margin-top: 19px;
+    }
+
+    .shop22 {
+        width: 230px;
+        height: 330px;
+        background-color: rgb(241, 241, 241);
+        float: left;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    .shop21 .shop22:hover {
+        background-color: rgb(187, 187, 187);
+        border: black 1px solid;
+    }
+
+    .shop21 .product2 {
+        width: 95%;
+        height: 60%;
+        overflow: hidden;
+        margin: 8px;
+        border-radius: 10px;
+    }
+
+    .product2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product2 :hover {
+        width: 105%;
+        height: 105%;
+    }
+
+    .introduce2 {
+        width: 95%;
+        height: 35%;
+        margin: 8px;
+        background-color: rgb(219, 219, 219);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .introduce2 .word2 {
+        height: 50%;
+        background-color: rgb(219, 219, 219);
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    .div1 {
+        width: 355px;
+        height: 350px;
+        /* background-color: #fffceb; */
+        background-color: #fffceb;
+        float: left;
+        /* position: absolute; */
+        /* left: 900px; */
+    }
+    .div1::before{
+        content: ' ';
+        display: table;
+    }
+    .div1 .shop3{
+        width: 420px;
+        height: 115px;
+        background-color: rgb(228, 228, 228);
+        margin: 15px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .shop3 img{
+        width: 35%;
+        height: 95%;
+        margin: 5px;
+        float: left;
+        border-radius: 5px;
+    }
+    .word3{
+        width: 60%;
+        height: 60%;
+        background-color: rgb(211, 216, 211);
+        margin-left: 180px;
+        margin-top: 5px;
+        padding-left: 10px;
+        padding-top: 2px;
+        border-radius: 5px;
+    }
+    .price3{
+        margin-top: -5px;
+    }
+
+    .div2 {
+        width: 1407px;
+        height: 400px;
+        clear: both;
+        background-color: #f0f0f0;
+    }
+    .price1{
+        float: left;
+    }
+    
+
+
+
+        

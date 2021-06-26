@@ -1,0 +1,152 @@
+*{
+	margin:0;
+	padding: 0;
+}
+/* 版心 */
+.w{
+	width:1200px;
+	margin: 0 auto;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+body{
+    background-color: #fffceb;
+    /*background: url(图片/背景.jpg)no-repeat;*/
+    height: 1200px;
+    /*width: 100%;*/
+}
+.header{
+    height: 60px;
+    margin: 30px auto;
+	background-color: #fabf66;
+}
+.logo{
+    /* margin-left:0px; */
+	float:left;
+	margin-left:120px;
+    width: 100px;
+    height: 42px;}
+.nav{
+    float: left;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.nav ul li{
+    float: left;
+    margin: 0 15px;
+}
+.nav ul li a{
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: black;
+}
+.nav ul li a:hover{
+    border-bottom: 2px solid lightslategray;
+    color:lightslategray ;
+}
+.user{
+    float:right;
+    line-height: 42px;
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+/* header {
+	height:84px;
+	border-bottom:2px solid #c81523;
+}
+.logo{
+	padding-top: 18px;
+} */
+.registerarea{
+	height:522px;
+	border:1px solid  #ffd088;
+	margin-top:0px;
+	margin-left:100px;
+	margin-right: 100px;
+}
+.registerarea h3{
+	height: 43px;
+	border-bottom:1px solid  #fabf66;
+	background-color:   #ffd088;
+	line-height:42px;
+	padding:0 10px;
+	font-weight:400;
+	text-align: center;
+}
+.login{
+	float:right;
+	font-size: 14px;
+}
+.login a{
+	color:#c81523;
+}
+.reg_form{
+	width:1200px;
+	margin:50px auto 0;
+	/* text-align: center; */
+	margin-left: 250px;
+	line-height: 35px;
+}
+/*包裹表单项和对应的提示信息的容器的样式设置*/
+.register-box{
+	width:100%;
+	height: 20px;
+	padding-bottom: 30px;
+}
+
+.reg_form ul li {
+	margin-bottom:20px;
+	
+}
+.reg_form ul li label{
+	display: inline-block;
+	width: 88px;
+	text-align: right;
+}
+.reg_form ul li .inp{
+	width: 242px;
+	height:37px;
+	border:1px solid rgb(241, 10, 10);
+}
+
+/*提示信息样式设置*/
+.register-box .tip {
+	width:100%;
+	line-height: 30px;
+	font-size: 12px;
+}
+.register-box .tip i{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.register-box .tip span{
+	color:rgb(241, 10, 10);
+}
+.agree{
+	padding-left: 95px;
+}
+.agree input{
+	vertical-align:middle;
+}
+.agree a{
+	color: #1ba1e6;
+}
+.btn{
+	width:200px;
+	height:34px;
+	background-color: #ee9c20;
+	font-size: 14px;
+	color:#fff;
+	margin:30px 0 0 70px;
+}
